@@ -35,6 +35,8 @@ void CQLearningController::InitializeLearningAlgorithm(void)
 				vector<vector<vector<double>>>(_grid_size_x,
 					vector<vector<double>>(_grid_size_y,
 						vector<double>(4,0))));
+
+	currentMines = m_NumMines;
 		
 
 }
@@ -52,6 +54,7 @@ double CQLearningController::R(uint x,uint y, uint sweeper_no){
 		switch (m_vecObjects[objectHit]->getType()) {
 		case CDiscCollisionObject::Mine:
 			reward = 1000.0f;
+			currentMines--;
 			break;
 		case CDiscCollisionObject::SuperMine:
 			reward = -300.0f;
@@ -81,6 +84,7 @@ bool CQLearningController::Update(void)
 	if (cDead == CParams::iNumSweepers){
 		printf("All dead ... skipping to next iteration\n");
 		m_iTicks = CParams::iNumTicks;
+		currentMines = m_NumMines;
 	}
 
 	for (uint sw = 0; sw < CParams::iNumSweepers; ++sw){
@@ -94,13 +98,16 @@ bool CQLearningController::Update(void)
 		SVector2D<int> pos = m_vecSweepers[sw]->Position();
 		pos /= CParams::iGridCellDim;
 
-		/*
+		
 		if (sw == 5) {
-			std::string s = std::to_string(pos.x) + " " + std::to_string(pos.y)+ "\n";
+			std::string s = std::to_string(qtable[sw][3][3][0]) + "\n";
 			char const *pchar = s.c_str();
 			OutputDebugString(pchar);
-		}*/
+		}
+		
 
+
+		
 		//2:::Select action with highest historic return:
 		int highestreturn = RandInt(0, 3);
 		int highestvalue = 0;

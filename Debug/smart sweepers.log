@@ -1,10 +1,10 @@
 ﻿  CQLearningController.cpp
-c:\users\byrlia001\desktop\ml\qlearning\clean_slate\C2DMatrix.h(102): warning C4018: '<': signed/unsigned mismatch
-c:\users\byrlia001\desktop\ml\qlearning\clean_slate\C2DMatrix.h(108): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\byrlia001\desktop\ml\qlearning\clean_slate\C2DMatrix.h(110): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-CQLearningController.cpp(48): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-CQLearningController.cpp(86): warning C4018: '<': signed/unsigned mismatch
-CQLearningController.cpp(110): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-CQLearningController.cpp(136): warning C4018: '<': signed/unsigned mismatch
-  smart sweepers.vcxproj -> C:\Users\BYRLIA001\Desktop\ML\QLearning\clean_slate\Debug\smart sweepers.exe
-  smart sweepers.vcxproj -> C:\Users\BYRLIA001\Desktop\ML\QLearning\clean_slate\Debug\smart sweepers.pdb (Partial PDB)
+c:\users\liamb\documents\github\clean_slate\C2DMatrix.h(102): warning C4018: '<': signed/unsigned mismatch
+c:\users\liamb\documents\github\clean_slate\C2DMatrix.h(108): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\liamb\documents\github\clean_slate\C2DMatrix.h(110): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+CQLearningController.cpp(50): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+CQLearningController.cpp(90): warning C4018: '<': signed/unsigned mismatch
+CQLearningController.cpp(117): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+CQLearningController.cpp(143): warning C4018: '<': signed/unsigned mismatch
+  smart sweepers.vcxproj -> C:\Users\liamb\Documents\GitHub\clean_slate\Debug\smart sweepers.exe
+  smart sweepers.vcxproj -> C:\Users\liamb\Documents\GitHub\clean_slate\Debug\smart sweepers.pdb (Partial PDB)

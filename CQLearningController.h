@@ -18,5 +18,6 @@ public:
 	virtual bool Update(void);
 	virtual ~CQLearningController(void);
 	vector<vector<vector<vector<double>>>> qtable;
+	int currentMines;
 };
 
